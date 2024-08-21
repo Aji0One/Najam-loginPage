@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #121212;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            height: 80%;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .image-section {
+            flex: 1;
+            background-image: url('https://www.mobius.eu/hubfs/HS%20Mobius%20-%202022/Images/Expertise_healthcare%20logistics_logistics%20vision.jpg'); /* Replace with your image URL */
+            background-size: contain;
+            background-position: center;
+            height: 100%;
+            background-repeat: no-repeat;
+            margin-left: 60px;
+        }
+        .form-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            
+        }
+        .login-container {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+            color: #b0b0b0;
+        }
+        .login-container input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background-color: #262626;
+            color: #e0e0e0;
+        }
+        .login-container input[type="submit"] {
+            background-color: #6200ea;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #3700b3;
+        }
+        img{
+            width: 500px;
+            height: 500px;
+            object-fit: contain;
+            margin-left: 40px;
+            margin-top: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <!-- <img src="https://www.mobius.eu/hubfs/HS%20Mobius%20-%202022/Images/Expertise_healthcare%20logistics_logistics%20vision.jpg" alt="intro-pic"/> -->
+        </div>
+        <div class="form-section">
+            <div class="login-container">
+                <h1>Login</h1>
+                <form action="/login" method="post">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
